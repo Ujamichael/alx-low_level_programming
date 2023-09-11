@@ -1,33 +1,30 @@
 #include <stdio.h>
 
 /**
- * main- entry point
+ * main - entry point
  *
  * Return: 0
- */
+*/
 int main(void)
 {
-	int x;
-	int i;
-	int m;
+	int n, m, l;
 
+	for (n = 48; n < 58; n++)
 	{
-		for (x = 48; x < 58; x++)
+		for (m = 49; m < 58; m++)
 		{
-			for (i = 49; i < 58; i++)
+			for (l = 50; l < 58; l++)
 			{
-				for (m = 50; m < 58; m++)
+				if (l > m && m > n)
 				{
-					if (m > i && i > x)
+					putchar(n);
+					putchar(m);
+					putchar(l);
+					if (n != 55 || m != 56)
 					{
-						putchar(x);
-						putchar(i);
-						putchar(m);
-						if (x != 55 || i != 56)
-						{
-							putchar(',');
-							putchar(' ');
-						}
+						putchar(',');
+
+						putchar(' ');
 					}
 				}
 			}
@@ -36,4 +33,3 @@ int main(void)
 	putchar('\n');
 	return (0);
 }
-
