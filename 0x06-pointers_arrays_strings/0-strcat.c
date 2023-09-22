@@ -11,7 +11,7 @@ char *_strcat(char *dest, char *src)
 	int cyp;
 	int j;
 
-	i = 0;
+	cyp = 0;
 	while (dest[cyp] != '\0')
 	{
 		cyp++;
