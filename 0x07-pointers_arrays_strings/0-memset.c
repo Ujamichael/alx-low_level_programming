@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * _memset - used to fill memory
- * @*s: string to fill
- * @b: to be filled with
- * @n: byte of num  to fill the memory
- * Return: string
+ * _memset - function used to fill constant byte
+ * @s: string which is filled
+ * @b: byte to be filled with
+ * @n: bytes of the memory area
+ * Return: s
  */
 
 char *_memset(char *s, char b, unsigned int n)
