@@ -6,7 +6,7 @@
  * @j:int
  * Return:int
  */
-int check(int i, int j)
+int check_prime(int i, int j)
 {
 if (j < 2 || j % i == 0)
 return (0);
