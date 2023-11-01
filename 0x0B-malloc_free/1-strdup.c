@@ -4,7 +4,7 @@
 #include <string.h>
 /**
  * _strdup - entry point
- * @s: original string to be copied
+ * @str: original string to be copied
  * Return: copid string
  */
 char *_strdup(char *str)
