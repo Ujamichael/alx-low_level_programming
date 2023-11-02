@@ -1,5 +1,5 @@
 #include "main.h"
-#include <stdio.h>
+#include <stdlib.h>
 /**
  * st_len - entry point of support function
  * @str: string
@@ -7,10 +7,12 @@
  */
 unsigned int st_len(char *str)
 {
+	unsigned int len;
+
 	if (str == NULL)
 		return (0);
-	unsigned int len = 0;
-	
+	len = 0;
+
 	while (str[len] !=  '\0')
 	{
 		len++;
@@ -26,20 +28,20 @@ unsigned int st_len(char *str)
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
+	char *result;
+	unsigned int s1_len, s2_len, i, j;
+
 	if (s1 == NULL)
 		s1 = " ";
-	unsigned int s1_len = st_len(s1);
-	unsigned int s2_len = st_len(s2);
+	s1_len = st_len(s1);
+	s2_len = st_len(s2);
 
 	if (n >= s2_len)
 		n = s2_len;
-
-	char *result = malloc(s1_len + n + 1);
+	result = malloc(s1_len + n + 1);
 
 	if (result == NULL)
-		return(NULL);
-
-	unsigned int i, j;
+		return (NULL);
 
 	for (i = 0; s1[i] != '\0'; i++)
 	{
