@@ -5,19 +5,18 @@
 /**
  * _calloc - entry point
  * @size: size
- * nmemb: element num
+ * @nmemb: element num
  * Return: pointer
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *poin;
 
-	poin = malloc(nmemb * size);
-
 	if (nmemb <= 0 || size <= 0)
 	{
 		return (NULL);
 	}
+	poin = malloc(nmemb * size);
 	if (poin == NULL)
 	{
 		return (NULL);
