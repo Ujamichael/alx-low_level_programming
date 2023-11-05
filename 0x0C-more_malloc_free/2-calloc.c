@@ -18,7 +18,8 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	{
 		return (NULL);
 	}
-	if (poin == NULL){
+	if (poin == NULL)
+	{
 		return (NULL);
 	}
 	memset(poin, 0, (size_t)nmemb * size);
