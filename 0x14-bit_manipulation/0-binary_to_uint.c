@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * binary_to_unit - converts binary to int
+ * binary_to_uint - converts binary to int
  * @b: binary to convert
  * Return: unsinged int val
  */
@@ -15,7 +15,7 @@ unsigned int binary_to_uint(const char *b)
 	{
 		if (b[i] < '0' || b[i] > '1')
 			return (0);
-		ans *= 2 + (b[i] - '0');
+		ans = 2 * ans + (b[i] - '0');
 	}
 	return (ans);
 }
